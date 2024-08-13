@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=runnerz'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=menda'
+    ports:
+      - '5400:5432'
+
